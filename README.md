@@ -21,4 +21,11 @@ However, there is one huge problem. Roblox is very trigger happy when it comes t
 surely seen as suspicious by Roblox, and the chance of them getting banned would be unreasonably high. It is for this reason that the platform would not be successful. Users would lose their items due to my holding accounts
 being banned. I've thought for a while about solutions, but as you can probably guess by me releasing the entire source code here, there isn't one.
 
+<img width="1280" alt="image" src="https://github.com/DrewStewart7/LimSwap/assets/114938193/0cf7c5d2-ee16-4a53-bfed-96764631fdec">
+
+
+![Screenshot 2024-05-09 164356](https://github.com/DrewStewart7/LimSwap/assets/114938193/6d71ee84-7707-4b5a-b4e0-2f2a0126ccff)
+
+
+![Screenshot 2024-05-09 164343](https://github.com/DrewStewart7/LimSwap/assets/114938193/bcd48f11-f9e5-4d0e-bd1a-2669b65429c2)
 
