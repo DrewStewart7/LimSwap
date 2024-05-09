@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="maketrade.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <title>Make a Trade - LimSwap</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html"><span id="logo">LimSwap</span></a></li>
+            <li><a href="trade.html" id="tradeButton" class="navButton" data-text="Trade">Trade</a></li>
+            <li><a href="search.html" id="search-Button" class="navButton" data-text="Discover">Discover</a></li>
+            <li><a href="lookup.html" id="lookupButton" class="navButton" data-text="Search">Search</a></li>
+            <li><a href="dashboard.html" id="profileButton" class="navButton" data-text="Dashboard">Dashboard</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div id="success-message" style="display: none; position: fixed; top: 0; width: 100%; background-color: #64ff73; color: white; text-align: center; z-index: 10; margin-left: auto; font-family: 'Fredoka One'; left: 0;">
+            Success
+        </div>
+        <div id="left-container">
+
+            <div class="search-area">
+                <form id="userSearchForm">
+                    <input type="text" id="usernameInput" placeholder="Enter username">
+                    <button type="submit" id="submit">Search</button>
+                </form>
+            </div>
+    
+            <h2 style="max-width: 80%;">Your Items</h2>
+            <div id="your-items" class="your-items">
+                <!-- Your items go here -->
+            </div>
+    
+    
+            <h2 style="max-width: 80%;">Their Items</h2>
+            <div class="their-items" id="their-items">
+                <!-- Their items go here -->
+            </div>
+        </div>
+
+        
+
+        <div class="trade-area">
+           
+
+            <h2>You give</h2>
+            <p id="your-rap">Total RAP: 0</p>
+            <div class="your-selected-items" id="your-selected-items">
+                <!-- Your selected items go here -->
+            </div>
+
+            <h2>You receive</h2>
+            <p id="their-rap">Total RAP: 0</p>
+            <div class="their-selected-items" id="their-selected-items">
+                <!-- Their selected items go here -->
+            </div>
+
+           
+
+            <button class="place-trade-btn" id="place-trade-btn">Place Trade</button>
+        </div>
+    </div>
+    <script src="maketrade.js"></script>
+</body>
+</html>

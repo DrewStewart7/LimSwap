@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="deposit.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <title>Deposit - LimSwap</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html"><span id="logo">LimSwap</span></a></li>
+            <li><a href="trade.html" id="tradeButton" class="navButton" data-text="Trade">Trade</a></li>
+            <li><a href="search.html" id="search-Button" class="navButton" data-text="Discover">Discover</a></li>
+            <li><a href="lookup.html" id="lookupButton" class="navButton" data-text="Search">Search</a></li>
+            <li><a href="dashboard.html" id="profileButton" class="navButton" data-text="Dashboard">Dashboard</a></li>
+        </ul>
+    </nav>
+    <div id="success-message" style="display: none; position: fixed; top: 0; width: 100%; background-color: #64ff73; color: white; text-align: center; z-index: 100000; margin-left: auto; font-family: 'Fredoka One'; left: 0;">
+        Success
+    </div>
+    <div class="container">
+        <header>
+           <h1 id="deposit-label">Deposit</h1>
+        </header>
+        <h2>Your items</h2>
+        <div id="items-container">
+            
+            <!-- Items will be added here -->
+        </div>
+        <h2>Selected Items</h2>
+        <div id="selected-items-container">
+            
+            <!-- Selected items will be added here -->
+            <div class="selected-item"></div>
+            <div class="selected-item"></div>
+            <div class="selected-item"></div>
+            <div class="selected-item"></div>
+        </div>
+        <button id="deposit-button" style="margin-top: 20px;">Deposit</button>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <p id="modal-text"></p>
+                <div id="buttonDiv">
+                    <button id="cancel-button" class="gradient-red">Cancel</button>
+                    <button id="confirm-button" class="gradient-green">I sent the items</button>
+                </div>
+                
+            </div>
+        </div>
+    <script src="deposit.js"></script>
+</body>
+</html>

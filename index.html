@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <title>LimSwap</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html"><span id="logo">LimSwap</span></a></li>
+            <li><a href="trade.html" id="tradeButton" class="navButton" data-text="Trade">Trade</a></li>
+            <li><a href="search.html" id="search-Button" class="navButton" data-text="Discover">Discover</a></li>
+            <li><a href="lookup.html" id="lookupButton" class="navButton" data-text="Search">Search</a></li>
+            <li><a href="dashboard.html" id="profileButton" class="navButton" data-text="Dashboard">Dashboard</a></li>
+            <li id="login"><a href="#login">Link Roblox</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <header>
+            <h1>Welcome to LimSwap!</h1>
+            <div><p>Trade your Roblox Limited items with ease and flexibility!</p></div>
+        </header>
+        <section>
+            <h2>Why Choose Us?</h2>
+            <div class="section-content">
+                <p>Unlike the official Roblox trade system, we don't have a trade hold or a daily trade limit. This means you can trade as often as you like, and your items are available for trade immediately after you receive them.</p>
+                <img src="/frontend/images/valk.png" alt="Description of image">
+            </div>
+        </section>
+        <section>
+            <h2>Our Mission</h2>
+            <div><p>Our mission is to provide a safe, easy, and efficient platform for trading Roblox Limited items. We believe in the power of the Roblox trading community and want to help it thrive by removing barriers to trade.</p></div>
+        </section>
+        <section id="faq">
+            <h2>FAQ</h2>
+            <div class="faq-container">
+                <div class="faq-card">
+                    <div class="faq-card-inner">
+                        <div class="faq-card-front">
+                            <div class="faq-card-content">
+                                <p>How does this work?</p>
+                            </div>
+                        </div>
+                        <div class="faq-card-back">
+                            <div class="faq-card-content">
+                                <p>You link your Roblox account, deposit items, and then trade those items with other users throughout the site. When you're ready, you can withdraw your items to your Roblox account!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-card">
+                    <div class="faq-card-inner">
+                        <div class="faq-card-front">
+                            <div class="faq-card-content">
+                                <p>How can I withdraw my items?</p>
+                            </div>
+                        </div>
+                        <div class="faq-card-back">
+                            <div class="faq-card-content">
+                                <p>You can withdraw your items by clicking on the 'Withdraw' button in the navigation bar. Follow the instructions to complete the withdrawal process.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-card">
+                    <div class="faq-card-inner">
+                        <div class="faq-card-front">
+                            <div class="faq-card-content">
+                                <p>What is the minimum value of items I can trade?</p>
+                            </div>
+                        </div>
+                        <div class="faq-card-back">
+                            <div class="faq-card-content">
+                                <p>The minimum value of items you can trade is 200 RAP.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more cards as needed -->
+            </div>
+        </section>
+        <section>
+            <h2>Contact Us</h2>
+            <div>
+                <p>If you have any questions or concerns, please don't hesitate to contact us. We're here to help!</p>
+                <p>Join our <a href="https://discord.gg/hsmPkJFABh">Discord server</a> for support.</p>
+            </div>
+        </section>
+    </div>
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="/frontend/images/valk.png" alt="Your Image" id="modalImage"> <!-- Add this -->
+            <div id="formContainer"> <!-- Add this -->
+                
+                
+                <form id="loginForm">
+                    <h2 id="modalTitle">Login</h2> <!-- Add this -->
+                    <div id="formElements">
+                        <label for="roblosecurity">Enter your .ROBLOSECURITY cookie:</label>
+                        <input type="password" id="roblosecurity" name="roblosecurity">
+                        <input type="button" id="loginFormBtn" value="Login">
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

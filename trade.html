@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="trade.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <title>Trade - LimSwap</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html"><span id="logo">LimSwap</span></a></li>
+            <li><a href="trade.html" id="tradeButton" class="navButton" data-text="Trade">Trade</a></li>
+            <li><a href="search.html" id="search-Button" class="navButton" data-text="Discover">Discover</a></li>
+            <li><a href="lookup.html" id="lookupButton" class="navButton" data-text="Search">Search</a></li>
+            <li><a href="dashboard.html" id="profileButton" class="navButton" data-text="Dashboard">Dashboard</a></li>
+        </ul>
+    </nav>
+    <div id="success-message" style="display: none; position: fixed; top: 0; width: 100%; background-color: #64ff73; color: white; text-align: center; z-index: 100000; margin-left: auto; font-family: 'Fredoka One'; left: 0;">
+        Success
+    </div>
+    <button id="new-trade-button">New Trade</button>
+    <div class="main-container" id="mainContainer">
+        
+        <div class="left-container">
+            <h1>Trades</h1>
+
+            <!-- Dropdown selector for trade statuses -->
+            <select id="trade-status-selector">
+                <option value="Select" selected>Select Trade Status</option>
+                <option value="inbound">Inbound</option>
+                <option value="outbound">Outbound</option>
+                <option value="inactive">Inactive</option>
+                <option value="completed">Completed</option>
+            </select>
+            <div id="tradeList" class="scrollable-div">
+                
+                
+            </div>
+        </div>
+        <div idclass="right-container" id="right-container">
+            <h1>Trade Information</h1>
+            <div class="tradeInfo">
+                <h2 id="partnerName"></h2>
+                <h2 id="giveTitle">Items you give</h2>
+                <div class="items-give">
+                    <div class="empty-box"></div>
+                    <div class="empty-box"></div>
+                    <div class="empty-box"></div>
+                    <div class="empty-box"></div>
+                    <!-- Items you'll give go here -->
+                </div>
+                <h2 id="recieveTitle">Items you receive</h2>
+                <div class="items-receive">
+                    <div class="empty-box"></div>
+                    <div class="empty-box"></div>
+                    <div class="empty-box"></div>
+                    <div class="empty-box"></div>
+                    <!-- Items you'll receive go here -->
+                </div>
+                <div class="trade-actions-wrapper">
+                    <div class="trade-actions">
+                        <button class="decline-button" id="decline-button">Decline</button>
+                        <button class="counter-button" id="counter-button">Counter</button>
+                        <button id="accept-button" class="accept-button">Accept</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="trade.js"></script>
+</body>
+</html>

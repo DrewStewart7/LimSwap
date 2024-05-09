@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <title>Dashboard - LimSwap</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html"><span id="logo">LimSwap</span></a></li>
+            <li><a href="trade.html" id="tradeButton" class="navButton" data-text="Trade">Trade</a></li>
+            <li><a href="search.html" id="search-Button" class="navButton" data-text="Discover">Discover</a></li>
+            <li><a href="lookup.html" id="lookupButton" class="navButton" data-text="Search">Search</a></li>
+            <li><a href="dashboard.html" id="profileButton" class="navButton" data-text="Dashboard">Dashboard</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <header>
+            
+            <h1 id="dashboard-label">Dashboard</h1>
+            <div id="dashboard-container">
+                <div id="dashboard-div">
+                    <div id="user-div">
+                        <h2 id="usernameLabel">Username: loading</h2>
+                        <h2 id="idLabel">Account ID: loading</h2>
+                        <button id="new-trade-button">New Trade</button>
+                        <button id="view-trades-button">View Trades</button>
+                    </div>
+                    
+                    <div id="account-actions-div">
+                        <button id="deposit-button" onclick="location.href='deposit.html'">Deposit</button>
+                        <button id="withdraw-button" onclick="location.href='withdraw.html'">Withdraw</button>
+                        <button id="logout-button">Logout</button>
+                    </div>
+
+                    <div id="stats-div">
+                        <h2 id="rapLabel">RAP: loading</h2>
+                        <h2 id="usdLabel">USD Value: loading </h2>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="items-container">
+                <div id="items-div">
+                    <h2>Your items</h2>
+                    <div id="items-content">
+                        
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <script src="dashboard.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.2.0/jquery.fittext.min.js"></script>
+</body>
+</html>

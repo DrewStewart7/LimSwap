@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="lookup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <title>User Lookup - LimSwap</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html"><span id="logo">LimSwap</span></a></li>
+            <li><a href="trade.html" id="tradeButton" class="navButton" data-text="Trade">Trade</a></li>
+            <li><a href="search.html" id="search-Button" class="navButton" data-text="Discover">Discover</a></li>
+            <li><a href="lookup.html" id="lookupButton" class="navButton" data-text="Search">Search</a></li>
+            <li><a href="dashboard.html" id="profileButton" class="navButton" data-text="Dashboard">Dashboard</a></li>
+        </ul>
+    </nav>
+    <div id="mainContainer" class="container">
+        <header>
+            
+        </header>
+        <form id="userSearchForm">
+            <input type="text" id="username" name="username" placeholder="Enter username">
+            <button type="submit">Search</button>
+        </form>
+        <!-- User Information Section -->
+        <section id="userInfo">
+            <h2>User Information</h2>
+            <!-- The actual user information will be added here dynamically -->
+        </section>
+        <!-- User Items Section -->
+        <section id="userItems">
+            <h2 id="itemsTitle">User Items</h2>
+            <!-- The actual user items will be added here dynamically -->
+        </section>
+    </div>
+    <script src="lookup.js"></script>
+</body>
+</html>
